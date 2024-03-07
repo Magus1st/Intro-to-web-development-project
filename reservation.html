@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <a href="about_us.html">About Us</a>
+    <a href="Location.html">Location</a>
+    <a href="menu.html">Menu</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="about_us.html">Contact Us</a>
+
+    <h1>Welcome to Di Stakehouse</h1>
+  
+    <h2>Reservation</h2>
+    <form id="reservationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br>
+      
+      <label for="PartySize">Number of Guest:</label>
+      <input type="text" id="PartySize" required><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required><br>
+      
+      <label for="time">Time:</label>
+      <input type="time" id="time" required><br>
+      
+      <input type="submit" value="Make Reservation">
+    </form>
+    
+    <h2>Pre-order</h2>
+    <form id="preOrderForm">
+      <label for="mainCourse">Main Course:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Stake">Stake - Well Done</option>
+        <option value="Checken Pasta">Chicken Pasta</option>
+        <option value="Pasta">Pasta</option>
+      </select><br>
+      
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" required><br>
+      
+      <input type="submit" value="Pre-order">
+    </form>
+</body>
+</html>
