@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Confirmation</title>
+</head>
+<body>
+    <h1>Reservation Confirmation</h1>
+    <p> 
+
+    // Assuming you are using PHP for sending email and processing pre-order request
+    
+    // Retrieve the user's information from the reservation form
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    
+    // Generate a unique reservation code
+    $reservationCode = uniqid();
+    
+    // Send the reservation confirmation email to the user
+    $to = $email;
+    $subject = "Reservation Confirmation - Your reservation code is $reservationCode";
+    $message = "Dear $name,\r\n\r\nThank you for making a reservation. Your reservation code is $reservationCode.\r\n\r\nPlease keep this code for future reference.\r\n\r\nBest regards,\r\nYour Website Team";
+    $headers = "From: your-email@example.com\r\n";
+    
+    if (mail($to, $subject, $message, $headers)) {
+        // Email sent successfully
+        echo "<p>Reservation confirmation email has been sent to $email.</p>";
+        echo "<p>Your reservation code: $reservationCode</p>";
+    } else {
+        // Failed to send email
+        echo "<p>There was an error sending the reservation confirmation email.</p>";
+    }
+    
+    // Process the pre-order request tied to this reservation (assuming you have pre-order logic in place)
+    // Retrieve the pre-order request from the reservation form
+    $preOrder = $_POST['preOrder'];
+    
+    // Process the pre-order request accordingly
+    
+    <p>
+
+    </p>
+
+</body>
+</html>
