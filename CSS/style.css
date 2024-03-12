@@ -3,7 +3,7 @@ h1 {
     color:rgb(255, 255, 255);
 }
 #nav{
-    background-color: lightskyblue;
+    background-color: lightsalmon;
     text-align: center;
     padding: 6px;
     border-radius: 5px;
@@ -20,7 +20,7 @@ h1 {
     color: black;
     border-style: solid;
     border-width: 0px 2px 0px 2px;
-    border-color: darkblue;
+    border-color: darkblue transparent 50%;
     
 }
 
@@ -32,7 +32,7 @@ h1 {
 }
 
 #main{
-    background-color: rgb(152, 161, 241);
+    background-color: rgba(219, 167, 25, 0.747);
     text-align: center;
     margin: 0% 10%;
     border-radius: 15px;
@@ -46,7 +46,7 @@ h1 {
     padding: 5px;
 }
 #footer{
-    background-color: rgb(31, 30, 39);
+    background-color: lightcoral;
     text-align: center;
     padding: 5px;
     border-radius: 5px;
