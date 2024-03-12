@@ -1,11 +1,70 @@
 
 h1 {
-    color:rgb(186, 25, 255);
+    color:rgb(255, 255, 255);
 }
-#banner{
-    background-color: rgb(152, 161, 241);
+#nav{
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+
+    /*
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    */
+}
+#nav a{
+    margin-right: 30px;
+    padding: 5px;
+    color: black;
+    border-style: solid;
+    border-width: 0px 2px 0px 2px;
+    border-color: darkblue;
+    
 }
 
-.main{
+#nav a:hover{
+    background-color: aqua;
+    animation-name: nav-hover;
+    animation-duration: .2s;
+    background-color: white;
+}
+
+#main{
     background-color: rgb(152, 161, 241);
+    text-align: center;
+    margin: 0% 10%;
+    border-radius: 15px;
+
+}
+.sub-main{
+    border-radius: 15px;
+    background-color: rgb(153, 142, 160);
+}
+.sub-main p{
+    padding: 5px;
+}
+#footer{
+    background-color: rgb(31, 30, 39);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+#footer a{
+    margin-right: 30px;
+    padding: 5px;
+    color: white;
+}
+#footer a:hover{
+    background-color: aliceblue;
+    color: black;
+    
+}
+/*Animation*/
+@keyframes nav-hover{
+    from {background-color: lightskyblue;}
+    to {background-color: white;}
+
 }
