@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
 </head>
 <body>
   <header id="nav">
-        
     <a href="index.html">Home</a> 
     <a href="about_us.html">About Us</a>
     <a href="Location.html">Location</a>
     <a href="menu.html">Menu</a>
     <a href="reservation.html">Reservation</a>
-  
+    <a href="about_us.html">Contact Us</a>
+    
+</header>
+
+  <div id="main">
     <h1>Welcome to Di Steakhouse</h1>
   
     <h2>Reservation</h2>
@@ -36,7 +40,6 @@
       <input type="submit" value="Make Reservation">
   
       <script src="script.js"></script>
-
     </form>
     <p>Pre-Order is facilitated for reservations for 5 or less members, for larger parties it is recomended that reservation is made and meal requirements are submitted via email 48 Hrs before the date of the reservation</p>
 
@@ -79,183 +82,178 @@
       <input type="number" id="quantity" required></br>
       <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
       <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
+    </form>
 
       <h2>Pre-order - Guest 2</h2>
 
-      <form id="preOrderForm">
-        <label for="mainCourse">Main Course:</label>
-        <select id="meal" required>
-          <option value="">Select</option>
-          <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-          <option value="Avocado Toast">Avocado Toast - Brunch</option>
-          <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-          <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-          <option value="French Toast">French Toast - Brunch</option>
-          <option value="Caesar Salad">Caesar Salad - Lunch</option>
-          <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-          <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-          <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-          <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-          <option value="Filet Mignon">Filet Mignon - Dinner</option>
-          <option value="Ribeye">Ribeye - Dinner</option>
-          <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-          <option value="T-Bone">T-Bone- Dinner</option>
-          <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-          <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-          </select><br>
+    <form id="preOrderForm">
+      <label for="mainCourse">Main Course:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+        <option value="Avocado Toast">Avocado Toast - Brunch</option>
+        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+        <option value="French Toast">French Toast - Brunch</option>
+        <option value="Caesar Salad">Caesar Salad - Lunch</option>
+        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+        <option value="Filet Mignon">Filet Mignon - Dinner</option>
+        <option value="Ribeye">Ribeye - Dinner</option>
+        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+        <option value="T-Bone">T-Bone- Dinner</option>
+        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+      </select><br>
+
+      <label for="Deserts">Desert Item:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Chocolate Cake">Chocolate Cake</option>
+        <option value="Cheesecake">Cheesecake</option>
+        <option value="Apple Pie">Apple Pie</option>
+        <option value="Tiramisu">Tiramisu</option>
+        <option value="Fruit Tart">Fruit Tart</option>
+        <option value="Creme Brulee">Creme Brulee</option>
+      </select><br>
+
+      <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
+      <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
+    </form>
+    
+    <h2>Pre-order - Guest 3</h2>
+    <form id="preOrderForm">
+      <label for="mainCourse">Main Course:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+        <option value="Avocado Toast">Avocado Toast - Brunch</option>
+        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+        <option value="French Toast">French Toast - Brunch</option>
+        <option value="Caesar Salad">Caesar Salad - Lunch</option>
+        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+        <option value="Filet Mignon">Filet Mignon - Dinner</option>
+        <option value="Ribeye">Ribeye - Dinner</option>
+        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+        <option value="T-Bone">T-Bone- Dinner</option>
+        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+        </select><br>
+
+      <label for="Deserts">Desert Item:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Chocolate Cake">Chocolate Cake</option>
+        <option value="Cheesecake">Cheesecake</option>
+        <option value="Apple Pie">Apple Pie</option>
+        <option value="Tiramisu">Tiramisu</option>
+        <option value="Fruit Tart">Fruit Tart</option>
+        <option value="Creme Brulee">Creme Brulee</option>
+      </select><br>
+
+      <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
+      <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
+    </form>
+
+    <h2>Pre-order - Guest 4</h2>
+    <form id="preOrderForm">
+      <label for="mainCourse">Main Course:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+        <option value="Avocado Toast">Avocado Toast - Brunch</option>
+        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+        <option value="French Toast">French Toast - Brunch</option>
+        <option value="Caesar Salad">Caesar Salad - Lunch</option>
+        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+        <option value="Filet Mignon">Filet Mignon - Dinner</option>
+        <option value="Ribeye">Ribeye - Dinner</option>
+        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+        <option value="T-Bone">T-Bone- Dinner</option>
+        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+        </select><br>
+
+      <label for="Deserts">Desert Item:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Chocolate Cake">Chocolate Cake</option>
+        <option value="Cheesecake">Cheesecake</option>
+        <option value="Apple Pie">Apple Pie</option>
+        <option value="Tiramisu">Tiramisu</option>
+        <option value="Fruit Tart">Fruit Tart</option>
+        <option value="Creme Brulee">Creme Brulee</option>
+
+      </select><br>
+      <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
+      <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
+    </form>
+
+    </select><br><h2>Pre-order - Guest 5</h2>
+    <form id="preOrderForm">
+      <label for="mainCourse">Main Course:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+        <option value="Avocado Toast">Avocado Toast - Brunch</option>
+        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+        <option value="French Toast">French Toast - Brunch</option>
+        <option value="Caesar Salad">Caesar Salad - Lunch</option>
+        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+        <option value="Filet Mignon">Filet Mignon - Dinner</option>
+        <option value="Ribeye">Ribeye - Dinner</option>
+        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+        <option value="T-Bone">T-Bone- Dinner</option>
+        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+      </select><br>
+
+      <label for="Deserts">Desert Item:</label>
+      <select id="meal" required>
+        <option value="">Select</option>
+        <option value="Chocolate Cake">Chocolate Cake</option>
+        <option value="Cheesecake">Cheesecake</option>
+        <option value="Apple Pie">Apple Pie</option>
+        <option value="Tiramisu">Tiramisu</option>
+        <option value="Fruit Tart">Fruit Tart</option>
+        <option value="Creme Brulee">Creme Brulee</option>
   
-        <label for="Deserts">Desert Item:</label>
-        <select id="meal" required>
-          <option value="">Select</option>
-          <option value="Chocolate Cake">Chocolate Cake</option>
-          <option value="Cheesecake">Cheesecake</option>
-          <option value="Apple Pie">Apple Pie</option>
-          <option value="Tiramisu">Tiramisu</option>
-          <option value="Fruit Tart">Fruit Tart</option>
-          <option value="Creme Brulee">Creme Brulee</option>
-      </select><br>
-
-      <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
-      <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
-      
-      <h2>Pre-order - Guest 3</h2>
-    <form id="preOrderForm">
-      <label for="mainCourse">Main Course:</label>
-      <select id="meal" required>
-        <option value="">Select</option>
-        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-        <option value="Avocado Toast">Avocado Toast - Brunch</option>
-        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-        <option value="French Toast">French Toast - Brunch</option>
-        <option value="Caesar Salad">Caesar Salad - Lunch</option>
-        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-        <option value="Filet Mignon">Filet Mignon - Dinner</option>
-        <option value="Ribeye">Ribeye - Dinner</option>
-        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-        <option value="T-Bone">T-Bone- Dinner</option>
-        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-        </select><br>
-
-      <label for="Deserts">Desert Item:</label>
-      <select id="meal" required>
-        <option value="">Select</option>
-        <option value="Chocolate Cake">Chocolate Cake</option>
-        <option value="Cheesecake">Cheesecake</option>
-        <option value="Apple Pie">Apple Pie</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Fruit Tart">Fruit Tart</option>
-        <option value="Creme Brulee">Creme Brulee</option>
-      </select><br>
-
-      <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
-      <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
-
-      <h2>Pre-order - Guest 4</h2>
-    <form id="preOrderForm">
-<form id="preOrderForm">
-      <label for="mainCourse">Main Course:</label>
-      <select id="meal" required>
-        <option value="">Select</option>
-        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-        <option value="Avocado Toast">Avocado Toast - Brunch</option>
-        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-        <option value="French Toast">French Toast - Brunch</option>
-        <option value="Caesar Salad">Caesar Salad - Lunch</option>
-        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-        <option value="Filet Mignon">Filet Mignon - Dinner</option>
-        <option value="Ribeye">Ribeye - Dinner</option>
-        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-        <option value="T-Bone">T-Bone- Dinner</option>
-        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-        </select><br>
-
-      <label for="Deserts">Desert Item:</label>
-      <select id="meal" required>
-        <option value="">Select</option>
-        <option value="Chocolate Cake">Chocolate Cake</option>
-        <option value="Cheesecake">Cheesecake</option>
-        <option value="Apple Pie">Apple Pie</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Fruit Tart">Fruit Tart</option>
-        <option value="Creme Brulee">Creme Brulee</option>
-
       </select><br>
       <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
       <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
-
-      </select><br><h2>Pre-order - Guest 5</h2>
-      <form id="preOrderForm">
-        <form id="preOrderForm">
-          <label for="mainCourse">Main Course:</label>
-          <select id="meal" required>
-            <option value="">Select</option>
-            <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-            <option value="Avocado Toast">Avocado Toast - Brunch</option>
-            <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-            <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-            <option value="French Toast">French Toast - Brunch</option>
-            <option value="Caesar Salad">Caesar Salad - Lunch</option>
-            <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-            <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-            <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-            <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-            <option value="Filet Mignon">Filet Mignon - Dinner</option>
-            <option value="Ribeye">Ribeye - Dinner</option>
-            <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-            <option value="T-Bone">T-Bone- Dinner</option>
-            <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-            <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-            </select><br>
-    
-          <label for="Deserts">Desert Item:</label>
-          <select id="meal" required>
-            <option value="">Select</option>
-            <option value="Chocolate Cake">Chocolate Cake</option>
-            <option value="Cheesecake">Cheesecake</option>
-            <option value="Apple Pie">Apple Pie</option>
-            <option value="Tiramisu">Tiramisu</option>
-            <option value="Fruit Tart">Fruit Tart</option>
-            <option value="Creme Brulee">Creme Brulee</option>
-    
-        </select><br>
-        <label for="Diatery Requirements">State Dietary Requirements</label>        <br>
-        <textarea name="Diatery Requirements" id="Diatery Requirements" cols="10" rows="2" maxlength="20"></textarea>
       </br>  
 
       <input type="submit" value="Pre-order">
     </form>
-    </div>
+  </div>
+    
     
 
 
-    <footer id="footer">
-      <p>all rights reserved</p>
-      <a href="index.html">Facebook</a> 
-      <a href="about_us.html">Instagram</a>
-      <a href="Location.html">tik-tok</a>
-      <a href="menu.html">youtube</a>
-      <a href="reservation.html">gofundme</a>  
-    </footer>
+  <footer id="footer">
+    <a href="index.html">Facebook</a> 
+    <a href="about_us.html">Instagram</a>
+    <a href="Location.html">tik-tok</a>
+    <a href="menu.html">youtube</a>
+    <a href="reservation.html">gofundme</a>  
+  </footer>
+  <p>&copy; all rights reserved</p>
+
 
 </body>
-
-<div id="footer">
-  <p>all rights reserved</p>
-  <a href="index.html">Facebook</a> 
-  <a href="about_us.html">Instagram</a>
-  <a href="Location.html">tik-tok</a>
-  <a href="menu.html">youtube</a>
-  <a href="reservation.html">gofundme</a>  
-</div>
 
 </html>
