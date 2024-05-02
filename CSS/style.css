@@ -35,18 +35,44 @@ h1 {
 
 #main{
     background-color: rgba(73, 43, 22, 0.774);
-    text-align: center;
+    /*text-align: center;*/
     margin: 0% 10%;
     border-radius: 15px;
-
+    padding: 20px;
 }
 .sub_main{
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.548);
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    align-content: flex-start;
 }
 .sub_main p{
     padding: 5px;
+    
 }
+
+iframe{
+    width: 500px;
+    height: auto;
+    position: relative;
+    
+}
+#part1{
+    width: 200px;
+    justify-content: flex-start;
+}
+#part2{
+    text-align: left;
+    ;
+    padding: 10px;
+}
+.img{
+    width: 200px;
+    height: auto;
+}
+
 #footer{
     background-color: lightcoral;
     text-align: center;
@@ -69,4 +95,26 @@ h1 {
     from {background-color: lightskyblue;}
     to {background-color: white;}
 
+}
+/*     2nd style sheet     */
+div ul{
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(192, 190, 190);
+    padding: 0 ;
+    margin: 0;
+}
+.nav ul{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(223, 196, 159);
+    text-align: right;
+    
+}
+
+ul h2{
+    text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(168, 120, 120);
+    
 }
