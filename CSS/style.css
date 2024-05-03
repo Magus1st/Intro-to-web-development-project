@@ -5,7 +5,7 @@
     color: rgb(66, 29, 18);
 }
 
-#shcedule{
+#schedule{
     display: block;
     
 }
@@ -173,4 +173,19 @@ ul h2{
 
 #brunch{
     border-radius: 10px;
+}
+
+#map iframe{
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px 10%;
+    height: 400px;
+
+}
+.features
+{
+    font-size: xx-large;
+}
+.general-text{
+
 }
