@@ -29,34 +29,7 @@
     border-radius: 20px;
     padding: 20px;
 }
-#nav{
-    background-color: lightsalmon;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    margin: 0% 10%;
-    
-    /*
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    */
-}
-#nav a{
-    margin-right: 30px;
-    padding: 5px 10px;
-    width: 8%;
-    color: black;
-    border-radius: 5px;
-    /*border-style: solid;*/
-    border-width: 0px 2px 0px 2px;
-    border-color: darkblue transparent 50%;
-    
-}
+
 
 
 #menu {
@@ -113,24 +86,7 @@
     height: auto;
 }
 
-#footer{
-    background-color: lightcoral;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: white;
-    height: 20px;
-    margin: 0% 10%;
-}
-#footer a{
-    margin-right: 30px;
-    padding: 5px;
-    color: white;
-}
-#footer a:hover{
-    background-color: aliceblue;
-    color: black;
-    
+
 }
 /*Animation*/
 @keyframes nav-hover{
