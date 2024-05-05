@@ -58,12 +58,6 @@
     
 }
 
-#nav a:hover{
-    background-color: aqua;
-    animation-name: nav-hover;
-    animation-duration: .2s;
-    background-color: white;
-}
 
 #menu {
     text-align: center;
