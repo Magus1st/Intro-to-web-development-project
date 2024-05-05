@@ -10,7 +10,7 @@
 <body>
   <header id="nav">
     <nav class="navbar navbar-expand-lg bg-secondary text-center">  <div class="container">
-      <a class="navbar-brand" href="#">Silvera's SteakHouse</a>
+      <a class="navbar-brand" class="nav-link" href="index.html">Silvera's SteakHouse</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,245 +58,251 @@
         <label for="timeInput">Time:</label>
         <input type="time" class="form-control" id="timeInput" placeholder="Enter time">
       </div>
-      <button type="button" class="btn btn-secondary">Make Reservation</button>
+      <button type="button" class="btn btn-success">Make Reservation</button>
       
-  
-      <script src="script.js"></script>
     </form>
     <p>Pre-Order is facilitated for reservations for 5 or less members, for larger parties it is recomended that reservation is made and meal requirements are submitted via email 48 Hrs before the date of the reservation</p>
 
-    <h2>Pre-order - Guest 1</h2>
-    <form id="preOrderForm">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h2>Pre-order - Guest 1</h2>
+          <form id="preOrderForm">
+            
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+              <option selected>Main Course</option>
+              <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+              <option value="Avocado Toast">Avocado Toast - Brunch</option>
+              <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+              <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+              <option value="French Toast">French Toast - Brunch</option>
+              <option value="Caesar Salad">Caesar Salad - Lunch</option>
+              <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+              <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+              <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+              <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+              <option value="Filet Mignon">Filet Mignon - Dinner</option>
+              <option value="Ribeye">Ribeye - Dinner</option>
+              <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+              <option value="T-Bone">T-Bone- Dinner</option>
+              <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+              <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+            </select>
+            <select class="form-select"  aria-label="Large select example">
+              <option selected>Desert Item</option>
+              option value="">Select</option>
+              <option value="Chocolate Cake">Chocolate Cake</option>
+              <option value="Cheesecake">Cheesecake</option>
+              <option value="Apple Pie">Apple Pie</option>
+              <option value="Tiramisu">Tiramisu</option>
+              <option value="Fruit Tart">Fruit Tart</option>
+              <option value="Creme Brulee">Creme Brulee</option>
+            </select>
+            <div class="form-group">
+              <label for="quantityInput">Quantity:</label>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
+                <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+            
+           </form>
       
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-        <option selected>Main Course</option>
-        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-        <option value="Avocado Toast">Avocado Toast - Brunch</option>
-        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-        <option value="French Toast">French Toast - Brunch</option>
-        <option value="Caesar Salad">Caesar Salad - Lunch</option>
-        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-        <option value="Filet Mignon">Filet Mignon - Dinner</option>
-        <option value="Ribeye">Ribeye - Dinner</option>
-        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-        <option value="T-Bone">T-Bone- Dinner</option>
-        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-      </select>
-      <select class="form-select"  aria-label="Large select example">
-        <option selected>Desert Item</option>
-        option value="">Select</option>
-        <option value="Chocolate Cake">Chocolate Cake</option>
-        <option value="Cheesecake">Cheesecake</option>
-        <option value="Apple Pie">Apple Pie</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Fruit Tart">Fruit Tart</option>
-        <option value="Creme Brulee">Creme Brulee</option>
-      </select>
-      <div class="form-group">
-        <label for="quantityInput">Quantity:</label>
-        <div class="input-group">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
-          <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-      </div>
+            <h2>Pre-order - Guest 4</h2>
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+              <option selected>Main Course</option>
+              <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+              <option value="Avocado Toast">Avocado Toast - Brunch</option>
+              <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+              <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+              <option value="French Toast">French Toast - Brunch</option>
+              <option value="Caesar Salad">Caesar Salad - Lunch</option>
+              <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+              <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+              <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+              <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+              <option value="Filet Mignon">Filet Mignon - Dinner</option>
+              <option value="Ribeye">Ribeye - Dinner</option>
+              <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+              <option value="T-Bone">T-Bone- Dinner</option>
+              <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+              <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+            </select>
+            <select class="form-select"  aria-label="Large select example">
+              <option selected>Desert Item</option>
+              option value="">Select</option>
+              <option value="Chocolate Cake">Chocolate Cake</option>
+              <option value="Cheesecake">Cheesecake</option>
+              <option value="Apple Pie">Apple Pie</option>
+              <option value="Tiramisu">Tiramisu</option>
+              <option value="Fruit Tart">Fruit Tart</option>
+              <option value="Creme Brulee">Creme Brulee</option>
+            </select>
+            <div class="form-group">
+              <label for="quantityInput">Quantity:</label>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
+                <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+            <button type="button" class="btn btn-success">Submit Pre-Order</button>
+          </form>
+         </div>
+        <div class="col">
+          <h2>Pre-order - Guest 2</h2>
+          <form id="preOrderForm">
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+              <option selected>Main Course</option>
+              <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+              <option value="Avocado Toast">Avocado Toast - Brunch</option>
+              <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+              <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+              <option value="French Toast">French Toast - Brunch</option>
+              <option value="Caesar Salad">Caesar Salad - Lunch</option>
+              <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+              <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+              <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+              <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+              <option value="Filet Mignon">Filet Mignon - Dinner</option>
+              <option value="Ribeye">Ribeye - Dinner</option>
+              <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+              <option value="T-Bone">T-Bone- Dinner</option>
+              <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+              <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+            </select>
+            <select class="form-select"  aria-label="Large select example">
+              <option selected>Desert Item</option>
+              option value="">Select</option>
+              <option value="Chocolate Cake">Chocolate Cake</option>
+              <option value="Cheesecake">Cheesecake</option>
+              <option value="Apple Pie">Apple Pie</option>
+              <option value="Tiramisu">Tiramisu</option>
+              <option value="Fruit Tart">Fruit Tart</option>
+              <option value="Creme Brulee">Creme Brulee</option>
+            </select>
+            <div class="form-group">
+              <label for="quantityInput">Quantity:</label>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
+                <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
       
-     </form>
-
-      <h2>Pre-order - Guest 2</h2>
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-        <option selected>Main Course</option>
-        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-        <option value="Avocado Toast">Avocado Toast - Brunch</option>
-        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-        <option value="French Toast">French Toast - Brunch</option>
-        <option value="Caesar Salad">Caesar Salad - Lunch</option>
-        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-        <option value="Filet Mignon">Filet Mignon - Dinner</option>
-        <option value="Ribeye">Ribeye - Dinner</option>
-        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-        <option value="T-Bone">T-Bone- Dinner</option>
-        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-      </select>
-      <select class="form-select"  aria-label="Large select example">
-        <option selected>Desert Item</option>
-        option value="">Select</option>
-        <option value="Chocolate Cake">Chocolate Cake</option>
-        <option value="Cheesecake">Cheesecake</option>
-        <option value="Apple Pie">Apple Pie</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Fruit Tart">Fruit Tart</option>
-        <option value="Creme Brulee">Creme Brulee</option>
-      </select>
-      <div class="form-group">
-        <label for="quantityInput">Quantity:</label>
-        <div class="input-group">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
-          <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-      </div>
-    
-    </form>
-    
-    <h2>Pre-order - Guest 3</h2>
-    <form id="preOrderForm">
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-        <option selected>Main Course</option>
-        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-        <option value="Avocado Toast">Avocado Toast - Brunch</option>
-        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-        <option value="French Toast">French Toast - Brunch</option>
-        <option value="Caesar Salad">Caesar Salad - Lunch</option>
-        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-        <option value="Filet Mignon">Filet Mignon - Dinner</option>
-        <option value="Ribeye">Ribeye - Dinner</option>
-        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-        <option value="T-Bone">T-Bone- Dinner</option>
-        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-      </select>
-      <select class="form-select"  aria-label="Large select example">
-        <option selected>Desert Item</option>
-        option value="">Select</option>
-        <option value="Chocolate Cake">Chocolate Cake</option>
-        <option value="Cheesecake">Cheesecake</option>
-        <option value="Apple Pie">Apple Pie</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Fruit Tart">Fruit Tart</option>
-        <option value="Creme Brulee">Creme Brulee</option>
-      </select>
-      <div class="form-group">
-        <label for="quantityInput">Quantity:</label>
-        <div class="input-group">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
-          <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-      </div>
-
+            
+          </form>
       
-    </form>
+          <h2>Pre-order - Guest 5</h2>
+          <form id="preOrderForm">
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+              <option selected>Main Course</option>
+              <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+              <option value="Avocado Toast">Avocado Toast - Brunch</option>
+              <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+              <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+              <option value="French Toast">French Toast - Brunch</option>
+              <option value="Caesar Salad">Caesar Salad - Lunch</option>
+              <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+              <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+              <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+              <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+              <option value="Filet Mignon">Filet Mignon - Dinner</option>
+              <option value="Ribeye">Ribeye - Dinner</option>
+              <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+              <option value="T-Bone">T-Bone- Dinner</option>
+              <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+              <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+            </select>
+            <select class="form-select"  aria-label="Large select example">
+              <option selected>Desert Item</option>
+              option value="">Select</option>
+              <option value="Chocolate Cake">Chocolate Cake</option>
+              <option value="Cheesecake">Cheesecake</option>
+              <option value="Apple Pie">Apple Pie</option>
+              <option value="Tiramisu">Tiramisu</option>
+              <option value="Fruit Tart">Fruit Tart</option>
+              <option value="Creme Brulee">Creme Brulee</option>
+            </select>
+            <div class="form-group">
+              <label for="quantityInput">Quantity:</label>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
+                <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
+                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+          </form>
+        </div>
 
-    <h2>Pre-order - Guest 4</h2>
-    <form id="preOrderForm">
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-        <option selected>Main Course</option>
-        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-        <option value="Avocado Toast">Avocado Toast - Brunch</option>
-        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-        <option value="French Toast">French Toast - Brunch</option>
-        <option value="Caesar Salad">Caesar Salad - Lunch</option>
-        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-        <option value="Filet Mignon">Filet Mignon - Dinner</option>
-        <option value="Ribeye">Ribeye - Dinner</option>
-        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-        <option value="T-Bone">T-Bone- Dinner</option>
-        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-      </select>
-      <select class="form-select"  aria-label="Large select example">
-        <option selected>Desert Item</option>
-        option value="">Select</option>
-        <option value="Chocolate Cake">Chocolate Cake</option>
-        <option value="Cheesecake">Cheesecake</option>
-        <option value="Apple Pie">Apple Pie</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Fruit Tart">Fruit Tart</option>
-        <option value="Creme Brulee">Creme Brulee</option>
-      </select>
-      <div class="form-group">
-        <label for="quantityInput">Quantity:</label>
-        <div class="input-group">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
-          <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
+        <div class="col">
+        </select>
+        <h2>Pre-order - Guest 3</h2>
+        <form id="preOrderForm">
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+            <option selected>Main Course</option>
+            <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
+            <option value="Avocado Toast">Avocado Toast - Brunch</option>
+            <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
+            <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
+            <option value="French Toast">French Toast - Brunch</option>
+            <option value="Caesar Salad">Caesar Salad - Lunch</option>
+            <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
+            <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
+            <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
+            <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
+            <option value="Filet Mignon">Filet Mignon - Dinner</option>
+            <option value="Ribeye">Ribeye - Dinner</option>
+            <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
+            <option value="T-Bone">T-Bone- Dinner</option>
+            <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
+            <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
+          </select>
+          <select class="form-select"  aria-label="Large select example">
+            <option selected>Desert Item</option>
+            option value="">Select</option>
+            <option value="Chocolate Cake">Chocolate Cake</option>
+            <option value="Cheesecake">Cheesecake</option>
+            <option value="Apple Pie">Apple Pie</option>
+            <option value="Tiramisu">Tiramisu</option>
+            <option value="Fruit Tart">Fruit Tart</option>
+            <option value="Creme Brulee">Creme Brulee</option>
+          </select>
+          <div class="form-group">
+            <label for="quantityInput">Quantity:</label>
+            <div class="input-group">
+              <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
+              <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
+              <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div>
+         </form>
+      </div>
         </div>
       </div>
-      <div class="mb-3">
-        <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-      </div>
-    </form>
-
-    </select><br><h2>Pre-order - Guest 5</h2>
-    <form id="preOrderForm">
-      <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-        <option selected>Main Course</option>
-        <option value="Eggs Benedict">Eggs Benedict - Brunch</option>
-        <option value="Avocado Toast">Avocado Toast - Brunch</option>
-        <option value="Chicken and Waffles">Chicken and Waffles - Brunch</option>
-        <option value="Smoked Salmon Bagel">Smoked Salmon Bagel - Brunch</option>
-        <option value="French Toast">French Toast - Brunch</option>
-        <option value="Caesar Salad">Caesar Salad - Lunch</option>
-        <option value="Caprese Sandwich">Caprese Sandwich - Lunch</option>
-        <option value="Chicken Caesar Wrap">Chicken Caesar Wrap - Lunch</option>
-        <option value="BBQ Bacon Burger">BBQ Bacon Burger - Lunch</option>
-        <option value="Veggie Pizza">Veggie Pizza - Lunch</option>
-        <option value="Filet Mignon">Filet Mignon - Dinner</option>
-        <option value="Ribeye">Ribeye - Dinner</option>
-        <option value="Island Stake Strip">Island Stake Strip - Dinner</option>
-        <option value="T-Bone">T-Bone- Dinner</option>
-        <option value="Grilled Salmon">Grilled Salmon - Dinner</option>
-        <option value="Vegetable Pasta">Vegetable Pasta - Dinner</option>
-      </select>
-      <select class="form-select"  aria-label="Large select example">
-        <option selected>Desert Item</option>
-        option value="">Select</option>
-        <option value="Chocolate Cake">Chocolate Cake</option>
-        <option value="Cheesecake">Cheesecake</option>
-        <option value="Apple Pie">Apple Pie</option>
-        <option value="Tiramisu">Tiramisu</option>
-        <option value="Fruit Tart">Fruit Tart</option>
-        <option value="Creme Brulee">Creme Brulee</option>
-      </select>
-      <div class="form-group">
-        <label for="quantityInput">Quantity:</label>
-        <div class="input-group">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.nextElementSibling.value--">-</button>
-          <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
-          <button class="btn btn-outline-secondary btn-sm" type="button" onclick="this.previousElementSibling.value++">+</button>
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-      </div>
-      <button type="submit" class="btn btn-secondary">Pre-order</button>
-     </form>
-  </div>
     
-    
+    </div>
 
 
   <footer id="footer">
