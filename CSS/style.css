@@ -151,3 +151,17 @@ ul h2{
 .general-text{
 
 }
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.confirmation {
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 600px;
+}
+</style>
