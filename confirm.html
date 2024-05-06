@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Confirmation</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css"/>
+  <link rel="stylesheet" href="CSS/style.css"/>
+ 
+</head>
+
+   <!--navigation bar-->
+  <header id="nav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-centre" >
+      <div class="container justify-content-center">
+        <a class="navbar-brand" class="nav-link" href="index.html">Silvera's SteakHouse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a><br>
+           <a class="nav-link" href="about_us.html">About Us</a>
+            <a class="nav-link" href="Location.html">Location</a>
+            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link" href="reservation.html">Reservation</a>
+           <a class="nav-link" href="contact_us.html">Contact Us</a>
+           
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+  <body>
+    <div class="confirmation">
+        <h1> Reservation Confirmation</h1>
+        <p> Thank you for booking with Silvera's SteakHouse</p>
+
+        <p>Your reservation details</p>
+        <p><strong>Name:</strong class= ""> </p>
+        <p><strong>Email:</strong> johndoe@example.com</p>
+        <p><strong>Party Size:</strong> 5 people</p>
+        <p><strong>Main Course:</strong> Steak</p>
+        <p><strong>Dessert:</strong> Cake</p>
+        <p><strong>Quantity:</strong> 1</p>
+        <p><strong>Dietary Requirements:</strong> None</p>
+
+        <p><strong>Reference Number:</strong> <span id="referenceNumber"></span></p>
+    </div>
+
+    <script>
+        // Function to generate a random alphanumeric reference number
+        function generateReferenceNumber() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let reference = 'R';
+            for (let i = 0; i < 6; i++) {
+                reference += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return reference;
+        }
+
+        // Update the reference number span with the generated value
+        document.getElementById('referenceNumber').textContent = generateReferenceNumber();
+    </script>
+
+    <section>
+     
+      
+    </section>
+  </div>
+  
+  <footer id="footer">
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="https://www.facebook.com">Facebook</a><br>
+            <a class="nav-link" href="https://www.Instagram.com">Instagram</a>
+             <a class="nav-link" href="https://www.tiktok.com">Tik-Tok</a>
+             <a class="nav-link" href="https://www.youtube.com">YouTube</a>
+            <a class="nav-link" href=" https://www.gofundme.com">GoFundMe</a>
+           
+          </div>
+        </div>
+      </div>
+    </nav>
+  </footer>
+
+  <!-- If using a dynamic map service, replace the Google Maps API key in the src attribute -->
+
+    <p class="title">&copy; Silvera's Steakhouse. All rights reserved.</p>
+  <script src="script/jquery.min.js"></script>
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/site.js"></script>
+
+
+</body>
+</html>

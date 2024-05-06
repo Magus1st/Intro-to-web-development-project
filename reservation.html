@@ -58,7 +58,15 @@
         <label for="timeInput">Time:</label>
         <input type="time" class="form-control" id="timeInput" placeholder="Enter time">
       </div>
-      <button type="button" class="btn btn-success">Make Reservation</button>
+    
+      <button type="button" class="btn btn-success" onclick="confirmReservation()">Make Reservation</button>
+
+    <script>
+        // Function to redirect to the confirmation page
+        function confirmReservation() {
+            window.location.href = "confirm.html";
+        }
+    </script>
       
     </form>
     <p>Pre-Order is facilitated for reservations for 5 or less members, for larger parties it is recomended that reservation is made and meal requirements are submitted via email 48 Hrs before the date of the reservation</p>
@@ -155,7 +163,15 @@
               <label for="Diatery Requirements" class="form-label">State Dietary Requirements</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
             </div>
-            <button type="button" class="btn btn-success">Submit Pre-Order</button>
+
+           <button type="button" class="btn btn-success" onclick="confirmReservation()">Make Reservation</button>
+
+        <script>
+        // Function to redirect to the confirmation page
+        function confirmReservation() {
+            window.location.href = "confirm.html";
+        }
+        </script>
           </form>
          </div>
         <div class="col">
